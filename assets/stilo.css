@@ -1,0 +1,152 @@
+html{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 15px;
+    background-color: #e9e9e9;
+    /* padding: 10px 40px; */
+}
+
+
+button, .takombucha{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+body, button, a{
+    color: #e9e9e9;
+}
+
+h1{
+    margin: 6px 0;
+}
+
+
+h3, footer p{
+    font-size: 15px;
+    font-weight: 800;
+}
+
+#container_total{
+    padding: 35px 55px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+header ul{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 20px;
+}
+
+header button{
+    font-size: 17px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 10px 70px;
+    width: 100%;
+}
+
+header a{
+    display: inline-table;
+}
+
+#anim {
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+button{
+    background: #e60e1c;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+main > :first-child > :first-child{
+    position: absolute;
+    z-index: 2;
+    margin: 30px;
+    color: #e60e1c;
+}
+
+main > :first-child{
+    grid-column: span 3;
+}
+
+main > :nth-child(2){
+    display: grid;
+    row-gap: 10px;
+    grid-column: span 2;
+}
+
+.img-wrapper {
+    display: flex;
+    overflow: hidden;
+}
+
+main img{
+    filter: brightness(50%);
+    min-width: 700px;
+    height: 360px;
+    object-fit: cover;
+    transition: 1s;
+}
+
+main img:hover{
+    transform: scale(1.05);
+    filter: brightness(20%)
+}
+
+.takombucha{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #e60e1c;
+    padding: 35px 120px;
+}
+
+button:hover, .takombucha:hover{
+    transform: scale(1.05);
+    background: #96050c;
+    animation: bounce 0.4s;
+}
+
+.takombucha>:first-child{
+    font-size: 60px;
+    font-weight: 100;
+}
+
+.takombucha>:last-child{
+    font-weight: 900;
+}
+
+section ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+footer{
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: center;
+    padding: 30px
+}
+
+footer img{
+    filter: brightness(700%);
+    width: 20%;
+    grid-column: span 5;
+}

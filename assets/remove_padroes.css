@@ -1,0 +1,13 @@
+html, body, header, main, section, nav, footer, div, ul, ol, li, button, input, select, textarea, p{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
