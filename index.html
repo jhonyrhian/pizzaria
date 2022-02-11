@@ -9,17 +9,18 @@
     <title>Restaurante da família Galareto</title>
 </head>
 <body  onload="carrossel()">
-    <div id="container_total">
-        <header>
+    <header>
+        <nav>
             <ul>
-                <li><a href="#"><button onmouseover="hoover(0)">Pizza</button></a></li>
-                <li><a href="#"><button onmouseover="hoover(1)">Cerveja</button></a></li>
-                <li><a href="#"><button onmouseover="hoover(2)">Vinho</button></a></li>
-                <li><a href="#"><button onmouseover="hoover(3)">Sobremesa</button></a></li>
-                <li><a href="#"><button onmouseover="hoover(4)">Massas</button></a></li>
+                <li><button>Reserva</button></li>
+                <li><button>Onde encontrar</button></li>
+                <img src="assets/img/galaretoea.png">
+                <li><button>Contato</button></li>
+                <li><button>Trabalhe conosco</button></li>
             </ul>
-        </header>
-
+        </nav>
+    </header>
+    <div id="container_total">
         <main>
             <div>
                 <div>
@@ -31,46 +32,52 @@
                     <img id="imagem_corrente" src="">
                 </div>
             </div>
-            <div>
-                <div onmouseover="hoover(5)" class="takombucha">
-                    <p>R$39.99</p>
-                    <p>Pizza família</p>
-                </div>
-                <div onmouseover="hoover(6)" class="takombucha">
-                    <p>R$3.99</p>
-                    <p>Mini-pizza</p>
-                </div>
-            </div>
         </main>
 
-        <!-- <section>
+        <section>
             <ul>
-                <a href="#"><li class="primeiro">
+                <li onmouseover="hoover(0)"><a href="#" >
                     <span class="icon">🍕</span>
                     <h3>Pizzas</h3>
                     <p>As melhores pizzas da região, com receitas de família.</p>
-                </li></a>
-                <a href="#"><li>
+                </a></li>
+                <li onmouseover="hoover(1)"><a href="#" >
                     <span class="icon">🍺</span>
                     <h3>Cervejas</h3>
                     <p>Cervejas de qualidade em temperatura agradável</p>
-                </li></a>
-                <a href="#"><li>
+                </a></li>
+                <li onmouseover="hoover(2)"><a href="#" >
                     <span class="icon">🍷</span>
                     <h3>Vinhos</h3>
                     <p>Vinhos delicados e escolhidos a mão</p>
-                </li></a>
-                <a href="#"><li>
-                    <span class="icon">🎵</span>
-                    <h3>Música</h3>
-                    <p>Shows ao vivo todo final de semana!</p>
-                </li></a>
+                </a></li>
+                <li onmouseover="hoover(3)"><a href="#" >
+                    <span class="icon">🧁</span>
+                    <h3>Sobremesa</h3>
+                    <p>Sobremesas com receitas tradicionais</p>
+                </a></li>
+                <li onmouseover="hoover(4)"><a href="#" >
+                    <span class="icon">🍝</span>
+                    <h3>Massas</h3>
+                    <p>Diversos tipos de massas e molhos</p>
+                </a></li>
             </ul>
-        </section> -->
+        </section>
 
     </div>
     <footer>
+        <ul>
+            <li>Rua Josenildo Santos</li>
+            <li>12345678</li>
+            <li><a>restaurantegalareto@email.com</a></li>
+        </ul>
         <img src="assets/img/galareto.png">
+        <ul>
+            <li><a>Restaurante Galareto - no Facebook</a></li>
+            <li><a>Restaurante Galareto - no Instagram</a></li>
+            <li><a>Restaurante Galareto - no Twitter</a></li>
+            <li><a>912345678</a></li>
+        </ul>
     </footer>
 </body>
 </html>
