@@ -2,14 +2,16 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <link rel="icon" href="">
+    <link rel="icon" href="assets/img/galareto.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@700&family=Zen+Kaku+Gothic+Antique:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/remove_padroes.css">
     <link rel="stylesheet" type="text/css" href="assets/stilo.css">
     <script type="text/javascript" src="assets/script.js"></script>
     <title>Restaurante da família Galareto</title>
 </head>
 <body  onload="carrossel()">
-    <header>
+    <header id="start">
         <nav>
             <ul>
                 <li><button>Reserva</button></li>
@@ -21,11 +23,14 @@
         </nav>
     </header>
     <div id="container_total">
-        <main>
+        <main onmouseover="zoomin()" onmouseout="zoomout()">
             <div>
-                <div>
-                    <h1>Restaurante da família Galareto</h1>
-                    <p>Pratos tradicionais e receitas de família</p>
+                <div id="titulo_container">
+                    <div id="titulo">
+                        <h1>Restaurante da família Galareto</h1>
+                        <p>Pratos tradicionais e receitas de família</p>
+                        <button>pedir online</button>
+                    </div>
                 </div>
                 
                 <div class="img-wrapper">
@@ -36,47 +41,62 @@
 
         <section>
             <ul>
-                <li onmouseover="hoover(0)"><a href="#" >
+                <li onmouseover="hoover(0)"><a href="#container_total" >
                     <span class="icon">🍕</span>
                     <h3>Pizzas</h3>
                     <p>As melhores pizzas da região, com receitas de família.</p>
                 </a></li>
-                <li onmouseover="hoover(1)"><a href="#" >
+                <li onmouseover="hoover(1)"><a href="#container_total" >
                     <span class="icon">🍺</span>
                     <h3>Cervejas</h3>
                     <p>Cervejas de qualidade em temperatura agradável</p>
                 </a></li>
-                <li onmouseover="hoover(2)"><a href="#" >
+                <li onmouseover="hoover(2)"><a href="#container_total" >
                     <span class="icon">🍷</span>
                     <h3>Vinhos</h3>
                     <p>Vinhos delicados e escolhidos a mão</p>
                 </a></li>
-                <li onmouseover="hoover(3)"><a href="#" >
+                <li onmouseover="hoover(3)"><a href="#container_total" >
                     <span class="icon">🧁</span>
                     <h3>Sobremesa</h3>
                     <p>Sobremesas com receitas tradicionais</p>
                 </a></li>
-                <li onmouseover="hoover(4)"><a href="#" >
+                <li onmouseover="hoover(4)"><a href="#container_total" >
                     <span class="icon">🍝</span>
                     <h3>Massas</h3>
                     <p>Diversos tipos de massas e molhos</p>
                 </a></li>
             </ul>
         </section>
-
+        <section>
+            <div>
+                <div>
+                    <h3>Pizzas</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div>
+                    <h3>Vinhos</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+            <span></span>
+            <span></span>
+            <img src="assets/img/pizzatrans.png">
+            <img src="assets/img/vinotrans.png">
+        </section>
     </div>
     <footer>
         <ul>
-            <li>Rua Josenildo Santos</li>
-            <li>12345678</li>
-            <li><a>restaurantegalareto@email.com</a></li>
+            <li id="mapicon" >Rua Josenildo Santos</li>
+            <li id="phoneicon" >12345678</li>
+            <li id="emailicon" ><a target="_blank" href="https://gmail.com">restaurantegalareto@email.com</a></li>
         </ul>
         <img src="assets/img/galareto.png">
         <ul>
-            <li><a>Restaurante Galareto - no Facebook</a></li>
-            <li><a>Restaurante Galareto - no Instagram</a></li>
-            <li><a>Restaurante Galareto - no Twitter</a></li>
-            <li><a>912345678</a></li>
+            <li id="faceicon"><a target="_blank" href="https://www.facebook.com">Restaurante Galareto - no Facebook</a> </li>
+            <li id="instaicon"><a target="_blank" href="https://www.instagram.com">Restaurante Galareto - no Instagram</a></li>
+            <li id="tticon"><a target="_blank" href="https://www.twitter.com">Restaurante Galareto - no Twitter</a></li>
+            <li id="wppicon">(xx) 912345678</li>
         </ul>
     </footer>
 </body>
