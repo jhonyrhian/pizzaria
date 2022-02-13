@@ -40,10 +40,14 @@ var imagensFontes = [
 var indiceAtual = 0
 var indice = 0
 
-var numRand = Math.floor(Math.random() * 3)
+var posicao = 0
 
 function carrossel(){
-    document.getElementById("imagem_corrente").setAttribute("src", imagensFontes[indiceAtual][Math.floor(Math.random() * 3)])
+    document.getElementById("imagem_corrente").setAttribute("src", imagensFontes[indiceAtual][posicao])
+    posicao += 1
+    if (posicao == 3){
+        posicao = 0
+    }
 }
 carrossel()
 

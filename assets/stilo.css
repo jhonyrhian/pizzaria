@@ -3,6 +3,21 @@ html{
     --white: #e9e9e9;
     width: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+#contato, #mapa{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+}
+
+#contato{
+    margin: -5em 0;
+}
+
+#mapa{
+    margin: -9em 0;
 }
 
     ::-webkit-scrollbar {
@@ -268,7 +283,7 @@ section:nth-of-type(2)>div>:nth-child(2) img{
     filter: grayscale(1);
 }
 
-section:nth-of-type(2) div:last-child h3, section:nth-of-type(2) div:last-child p{
+section:nth-of-type(2)>div div:last-child h3, section:nth-of-type(2)>div div:last-child p{
     text-align: end;
 }
 
@@ -291,6 +306,7 @@ section:nth-of-type(2)>div>:nth-child(2) span{
 }
 
 iframe{
+    border: hidden;
     width: 100%;
     height: 360px;
     margin: 50px 0px;

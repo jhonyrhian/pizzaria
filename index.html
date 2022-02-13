@@ -10,15 +10,15 @@
     <script type="text/javascript" src="assets/script.js"></script>
     <title>Restaurante da família Galareto</title>
 </head>
-<body  onload="carrossel()">
-    <header id="start">
+<body id="start"  onload="carrossel()">
+    <header>
         <nav>
             <ul>
-                <li><button>Reserva</button></li>
-                <li><button>Onde encontrar</button></li>
-                <img src="assets/img/galaretoea.png">
-                <li><button>Contato</button></li>
-                <li><button>Trabalhe conosco</button></li>
+                <li><a href="#"><button>Reserva</button></a></li>
+                <li><a href="#mapa"><button>Onde encontrar</button></a></li>
+                <a href="#start"><img src="assets/img/galaretoea.png"></a>
+                <li><a href="#contato"><button>Contato</button></a></li>
+                <li><a href="#"><button>Trabalhe conosco</button></a></li>
             </ul>
         </nav>
     </header>
@@ -56,7 +56,7 @@
                     <h4>Vinhos</h4>
                     <p>Vinhos delicados e escolhidos a mão</p>
                 </a></li>
-                <li onmouseover="hoover(4)"><a href="#container_total" >
+                <li onmouseover="hoover(3)"><a href="#container_total" >
                     <span class="icon">🧁</span>
                     <h4>Sobremesa</h4>
                     <p>Sobremesas com receitas tradicionais</p>
@@ -84,8 +84,9 @@
                 </div>
             </div>
         </section>
+        <div id="mapa"></div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12342241.265556946!2d3.691392040654214!3d40.954266229288166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d4fe82448dd203%3A0xe22cf55c24635e6f!2zSXTDoWxpYQ!5e0!3m2!1spt-BR!2sbr!4v1644750941598!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
-
+        <div id="contato"></div>
         <section>
             <h2>Contato</h2>
             <p>Abaixo estão algumas formas de se ter contato conosco</p>
